@@ -44,11 +44,11 @@ public:
             x = x/10;
 
         }
-        cout<<news;
-        if(prev==news){
-            return false;
-        }
-        return true;
+       if(prev==news){
+        return false;
+       }
+       
+       return true;
     }
     int rotatedDigits(int n) {
         int count = 0;
