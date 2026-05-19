@@ -4,9 +4,10 @@ public:
     vector<int>v;
 
     Solution(ListNode* head) {
-        while(head){
-            v.push_back(head->val);
-            head = head->next;
+        ListNode*temp = head;
+        while(temp){
+            v.push_back(temp->val);
+            temp = temp->next;
         }
     }
     
